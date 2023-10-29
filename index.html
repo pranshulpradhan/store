@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Bookstore</h1>
+        <button id="dark-mode">Dark Mode</button>
+        <button id="login-button" class="hidden">Log In</button>
+        <button id="signup-button" class="hidden">Sign Up</button>
+    </header>
+    <main>
+        <div class="left-panel">
+            <h2>Categories</h2>
+            <ul id="category-list">
+                <!-- Category items will be added here -->
+            </ul>
+        </div>
+        <div class="right-panel">
+            <h2>Books</h2>
+            <div class="book-grid" id="book-list">
+                <!-- Book cards will be added here -->
+            </div>
+        </div>
+    </main>
+    <div id="auth-form" class="hidden">
+        <form>
+            <h2>Sign Up / Log In</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit" id="auth-submit">Submit</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
